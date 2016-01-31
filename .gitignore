@@ -39,3 +39,6 @@ node_modules
 
 # Don't store local api keys
 .env.local
+
+# Don't upload builds
+dist

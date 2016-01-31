@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,100,100italic,300italic,400,400italic,700,700italic,900,900italic&subset=latin,latin-ext);
-@import url('weather-icons.min.css');
+@import 'weather-icons/css/weather-icons.css';
 
 html, body, #content {
     background-color: black;
@@ -81,6 +81,22 @@ html, body, #content {
 
 .weather .later .day {
     padding-top: 5px;
+}
+
+.weather .later .day:nth-of-type(2) {
+    opacity: .9;
+}
+
+.weather .later .day:nth-of-type(3) {
+    opacity: .8;
+}
+
+.weather .later .day:nth-of-type(4) {
+    opacity: .7;
+}
+
+.weather .later .day:nth-of-type(5) {
+    opacity: .6;
 }
 
 .weather .later .temperature .low {

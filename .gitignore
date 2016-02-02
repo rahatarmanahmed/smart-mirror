@@ -41,4 +41,9 @@ node_modules
 .env.local
 
 # Don't upload builds
-dist
+www
+
+# cordova Android
+platforms/android
+hooks
+plugins

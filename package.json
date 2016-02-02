@@ -3,9 +3,9 @@
   "atomify": {
     "css": {
       "entry": "src/css/style.css",
-      "output": "dist/style.css",
+      "output": "www/style.css",
       "assets": {
-        "dest": "dist/assets",
+        "dest": "www/assets",
         "prefix": "assets/"
       }
     }
@@ -23,18 +23,18 @@
   },
   "scripts": {
     "lint": "eslint src",
-    "clean": "rimraf dist",
-    "copy-html": "cpx src/index.html dist",
+    "clean": "rimraf www",
+    "copy-html": "cpx src/index.html www",
     "prebuild": "npm run clean && npm run copy-html",
     "build-css": "atomify",
-    "build-js": "NODE_ENV=production browserify src/js/main.js | uglifyjs -cm > dist/bundle.js",
+    "build-js": "NODE_ENV=production browserify src/js/main.js | uglifyjs -cm > www/bundle.js",
     "build": "npm run build-css && npm run build-js",
-    "preserve": "mkdirp dist",
-    "serve": "live-server dist",
+    "preserve": "mkdirp www",
+    "serve": "live-server www",
     "start": "parallelshell \"npm run watch\" \"npm run serve\"",
     "prewatch": "npm run copy-html",
     "watch-css": "npm run build-css && onchange 'src/css/**/*.css' -- npm run build-css",
-    "watch-js": "watchify src/js/main.js -o dist/bundle.js -dv",
+    "watch-js": "watchify src/js/main.js -o www/bundle.js -dv",
     "watch": "parallelshell \"npm run watch-css\" \"npm run watch-js\""
   },
   "dependencies": {

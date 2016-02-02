@@ -1,1 +1,0 @@
-console.error("Error: Cannot find module '/Users/rahat/git/smart-mirror/src/main.js' from '/Users/rahat/git/smart-mirror'");

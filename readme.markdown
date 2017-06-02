@@ -1,5 +1,7 @@
 # Smart Mirror
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rahatarmanahmed/smart-mirror.svg)](https://greenkeeper.io/)
+
 My smart mirror inspired by [evancohen](https://github.com/evancohen/smart-mirror), but running as a static web page to be run on an Android tablet.
 
 TODO: screenshots
